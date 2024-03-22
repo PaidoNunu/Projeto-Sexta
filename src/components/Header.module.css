@@ -1,0 +1,23 @@
+.headerBase {
+    background-color: #364648;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 8px solid #559B58;
+
+
+}
+.headerBase h1 {
+    display: inline-block;
+    margin: 12px;
+    padding: 0;
+    font-family: "PT Sans Caption", sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+}
+.headerBase img{
+    width: 200px;
+    height: 200px;
+    
+}
