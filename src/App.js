@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Carrosel />
     </div>
   );
 }
