@@ -1,6 +1,3 @@
-
-
-
 .headerBase {
     background-color: #364648;
     padding: 0px;
@@ -31,8 +28,6 @@
     border: none;    
 }
 
- .headerBase img{
-}
 .logo{
     position: relative;
     margin: 0;
@@ -47,3 +42,4 @@
 width: 130%;
 height:190px;
 }
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
