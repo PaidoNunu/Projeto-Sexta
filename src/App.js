@@ -1,6 +1,6 @@
 import Header from './components/Header.js'
 import Carrosel from './components/Carrosel.js'
-import { ReactDOM } from 'react';
+import Textosh from './components/Textosh.js'
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Carrosel/>
+      <Textosh/>
      
     </div>
   );
