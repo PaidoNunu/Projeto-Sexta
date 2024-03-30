@@ -17,9 +17,10 @@ function home(){
         {id:'4', Image:'https://img.freepik.com/fotos-gratis/sacos-de-plastico-com-lixo-na-grama_23-2148523447.jpg?t=st=1711310784~exp=1711314384~hmac=7497eba50196d1a81c61150077fea33ba6bda7a395c42604b390882813fd662a&w=1060'},
     ]
     return(
-        <div>
+        <div className={styles.geral}>
+            <h1 className={styles.title}>Sobre o programa!</h1>
             <div className={styles.container}>
-        <h1 className={styles.title}>Sobre o programa!</h1>
+      
         <Swiper
         effect='fade'
         slidePerView={1}
@@ -36,19 +37,24 @@ function home(){
                 ) )}
         </Swiper>
         
+
     </div>
     <div className={styles.corpo}>
             <div className={styles.texto1}>
                 <h1>“O Senhor dará força ao seu povo; o Senhor abençoará o seu povo com paz.” “Não temas, porque eu estou contigo; não te assombres, porque eu sou teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça.” “Com seu divino poder nos deu tudo o que diz respeito à vida e piedade.”</h1></div>
-            <div>
+            <div className={styles.texto1}>
                 <h1>“Era desprezado, e o mais rejeitado entre os homens, homem de dores, e experimentado em padecimentos; e como um de quem os homens escondiam o rosto era desprezado, e não fizemos caso algum dele. Verdadeiramente ele tomou sobre si as nossas enfermidades, e as nossas dores levou sobre si; e nós o reputávamos por aflito, ferido de Deus, e oprimido. Porém foi ferido pelas nossas transgressões, e moído pelas nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas pisaduras fomos sarados.”</h1></div>
-        </div>
+                <div className={styles.texto1}>
+                <h1>“O Senhor dará força ao seu povo; o Senhor abençoará o seu povo com paz.” “Não temas, porque eu estou contigo; não te assombres, porque eu sou teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça.” “Com seu divino poder nos deu tudo o que diz respeito à vida e piedade.”</h1></div>
+                </div>
 
-
-
-
-
+                <footer className={styles.footer}>
+                    <h1>Sexo</h1>
+                </footer>
         </div>
     
     );
+
+
+
 }export default home;

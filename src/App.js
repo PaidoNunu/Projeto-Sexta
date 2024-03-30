@@ -12,10 +12,11 @@ function App() {
         <div className='logodiv'> <img  src={logo} alt='Minha imagem'/> </div>
         <div className='botaodiv'>
          <button className='botao'><Link to="/" className='link'>Home</Link></button>
-         <button className='botao'><Link to="/Noticias" className='link'>Noticias</Link></button>
-
+         <button className='botao'><Link to="/Noticias" className='link'>Notícias</Link></button>
+          
+          
           </div>
-          <button className='entrar'><Link to="/SignUp" className='link'>Entrar</Link></button>
+          <button className='entrar'><Link to="/SignUp" className='link_login'>Entrar</Link></button>
 
           </nav>
     <Routes>
