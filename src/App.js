@@ -4,7 +4,6 @@ import Home from './Pages/Home'
 import Login from './Pages/Login'
 import logo from './imgs/logo.jpg'
 import PontosDescartes from './Pages/PontosDescartes'
-
 function App() {
   return (
    <Router>

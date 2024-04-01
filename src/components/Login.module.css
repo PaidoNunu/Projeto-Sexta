@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 35vw;
-    margin-top: 8vw;
-    box-shadow: rgb(0, 0, 0, 0.5) 1px 1px 10px;
+    margin: auto;
+    box-shadow: rgb(0, 0, 0, 0.5) 3px 3px 10px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.183);
+    background-color: rgba(255, 255, 255, 0.28);
+    
 }
 
 .inputConteiner{
@@ -21,9 +21,9 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
-    color: white;
     font-family: "Gugi", sans-serif;
     font-style: normal;
+    color: white;
 }
 .input2{
     display: flex;
@@ -35,7 +35,7 @@
     border: 1px solid #447c46;
     border-radius: 12px;
     margin-bottom: 30px;
-box-shadow: 5px 5px 10px #22222270;
+    box-shadow: 5px 5px 10px #22222270;
 }
 .input1{
     display: flex;
@@ -46,27 +46,18 @@ box-shadow: 5px 5px 10px #22222270;
     height: 49px;
     border: 1px solid #447c46;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin: auto;
+    margin-bottom: 15px;
     box-shadow: 5px 5px 10px #22222270;
 }
 
 .imglogin{
     width: 270px;
     height: 250px;
-    margin-bottom: -30px;
-    margin-top: -15px;
+    margin: auto;
 }
-.imgloginbg{
-    background-color: white;
-    border-radius: 12px;
-    width: 0 auto;
-    height: auto 0;
-    margin-top: 20px;
-    box-shadow: 5px 5px 10px #22222270;
-}
-body{
+.loginpage{
     background-image: url(../imgs/background.jpg);
-    width: 100%;
-    height: 100%;
     background-size: cover;
+    background-color: #f0f8ff;
 }

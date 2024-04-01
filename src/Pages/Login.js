@@ -4,10 +4,9 @@ import logo from '../imgs/imgLogin.png'
 
 function login(){
     return(
-        <div className={styles.divform}>
-            <div className={styles.imgloginbg}>
+        <div className={styles.loginpage}>
+             <div className={styles.divform}>
             <img className={styles.imglogin} src={logo} alt=""></img>
-                </div>
         <form className={styles.form}>
             <div className={styles.inputConteiner}>
                 <label className={styles.label} htmlFor="email">E-mail</label>
@@ -17,11 +16,11 @@ function login(){
 
             <div className={styles.inputConteiner}>
                 <label className={styles.label} htmlFor="password">Senha</label>
-                <input className={styles.input2} type="password" name="password" id="password" placeholder="****">
+                <input className={styles.input2} type="password" name="password" id="password" placeholder="**">
                 </input>
             </div>
         </form>
-        </div> 
-       
+        </div>
+        </div>
     );
 }export default login;
