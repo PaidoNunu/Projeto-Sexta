@@ -1,10 +1,12 @@
 import React from "react";
 import styles from '../components/Login.module.css'
 import logo from '../imgs/imgLogin.png'
+import bg from '../imgs/background.jpg'
 
 function login(){
     return(
         <div className={styles.loginpage}>
+             <div className={styles.centralizar}>
              <div className={styles.divform}>
             <img className={styles.imglogin} src={logo} alt=""></img>
         <form className={styles.form}>
@@ -21,6 +23,8 @@ function login(){
             </div>
         </form>
         </div>
+             </div>
         </div>
+       
     );
 }export default login;
