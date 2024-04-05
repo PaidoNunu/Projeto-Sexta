@@ -1,5 +1,5 @@
 .divform{
-    width: 600px;
+    width: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,12 +56,12 @@
     height: 250px;
     margin: auto;
 }
-.centralizar{
+/* .centralizar{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-}
+} */
 
 .loginpage{
     background-image: url(../imgs/background.jpg);

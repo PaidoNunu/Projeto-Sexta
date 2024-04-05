@@ -49,7 +49,7 @@ function home(){
                 </div>
 
                 <footer className={styles.footer}>
-                    <h1>Sexo</h1>
+                    <h1>Sou um footer </h1>
                 </footer>
         </div>
     
