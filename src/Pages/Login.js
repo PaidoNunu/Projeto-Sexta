@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import styles from '../components/Login.module.css'
-import logo from '../imgs/imgLogin.png'
+import logo from '../imgs/lixozero2.png'
 import bg from '../imgs/background.jpg'
 
-function login(){
+function Login(){
+    let navigate = useNavigate();
+    function voltaHome() {
+        navigate('/');
+    }
+
     return(
         <div className={styles.loginpage}>
              <div className={styles.centralizar}>
@@ -12,14 +18,17 @@ function login(){
         <form className={styles.form}>
             <div className={styles.inputConteiner}>
                 <label className={styles.label} htmlFor="email">E-mail</label>
-                <input className={styles.input1} type="text" name="email" id="email" placeholder="Digite Seu melhor e-mail">
+                <input className={styles.input1} type="text" name="email" id="email" placeholder="exemplo@gmail.com">
                 </input>
             </div>
 
             <div className={styles.inputConteiner}>
                 <label className={styles.label} htmlFor="password">Senha</label>
-                <input className={styles.input2} type="password" name="password" id="password" placeholder="**">
+                <input className={styles.input2} type="password" name="password" id="password" placeholder="*******">
                 </input>
+            </div>
+            <div className={styles.inputConteiner}>
+                <input className={styles.input3} type="submit" name="submit" id="submit" value="ENTRAR" onClick={voltaHome}></input>
             </div>
         </form>
         </div>
@@ -27,4 +36,4 @@ function login(){
         </div>
        
     );
-}export default login;
+}export default Login;
