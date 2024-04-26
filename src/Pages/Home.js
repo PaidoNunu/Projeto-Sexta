@@ -7,6 +7,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
+import logo from '../imgs/logo.jpg'
 register();
 
 function home(){
@@ -40,25 +41,25 @@ function home(){
         
         <div className={styles.cardHome}>
                 <div className={styles.h1card}>
-                <h1>RECICLAR É UM ATTO DE SUSTENTABILIDADE</h1>
+                <h1>RECICLAR É UM ATO DE SUSTENTABILIDADE</h1>
                 </div>
                 <div className={styles.pcard}><p>Transformar é um dos lemas mais importante que carregamos conosco. Ressignificamos materiais descartáveis todos os meses, onde produtos que iriam parar em aterros ou lixões, ganham uma nova forma.</p></div>
                 </div>
         
         
         
-    <footer className={styles.footer}>
-      <div className={styles.footercontent}>
-        <p>&copy; {new Date().getFullYear()} Projeto Lixo Zero</p>
-        <p class="text-center text-white">
-            Quem faz, conta com a gente.
-            <br />
-            Acqio 2014 - 2021. Todos os direitos reservados
-            <br />
-            CNPJ: 18.577.728/0001-46
-          </p>
-      </div>
-    </footer>
+                <footer className={styles.footer}>
+                <div className={styles.divfooter}>
+                <img className={styles.imglogo} src={logo} alt=""></img>
+                <p className={styles.pfooter}>
+                    Reutilizar o hoje é preservar o amanhã!
+                    <br/>
+                    LIXOZERO 2023 - 2024. Todos os direitos reservados
+                    <br/>
+                    CNPJ: 18.666.777/0001-69
+                </p>
+                </div>
+                </footer>
         </div>
 
 
