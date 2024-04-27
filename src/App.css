@@ -39,8 +39,8 @@ body{
 .botaodiv{
   display: flex;
     justify-content: space-evenly;
-    margin-left: 55vh;
-    margin-right: 50vh;
+    margin: auto;
+    margin-left: 50vh;
 }
 
 .link{
@@ -80,4 +80,6 @@ body{
   height: 60px !important;
   border-radius: 12px;
   border: 2px solid;
-  border-color: white ;}
+  border-color: white;
+  margin-left: 45vh;
+}

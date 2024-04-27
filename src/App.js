@@ -7,17 +7,21 @@ import logo from './imgs/logo.jpg'
 import PontosDescartes from './Pages/PontosDescartes'
 
 
-const cores = ["Home", "Pontos de", "azul"];
 function Navbar() {
+  const abas = ["Home", "Pontos de Descartes", "Sobre", 'Entrar'];
+  const links = ['', 'descartes', 'Sobre', 'SignUp']
+  const classes = ['botao', 'botao', 'botao', 'entrar']
+  const classesLink = ['link','link', 'link', 'link_login']
   return (
     <nav className='header'>
       <div className='logodiv'> <img  src={logo} alt='Minha imagem'/> </div>
       <div className='botaodiv'>
-        <button className='botao'><Link to="/" className='link'>Home</Link></button>
-        <button className='botao'><Link to="/descartes" className='link'>Pontos de Descartes</Link></button>
-        <button className='botao'><Link to="/sobre" className='link'>Sobre</Link></button>
+          {abas.map((aba, index) => (
+          <button key={index} className={`${classes[index]}`}>
+            <Link to={`/${links[index]}`} className={`${classesLink[index]}`}>{aba}</Link>
+          </button>))}
       </div>
-      <button className='entrar'><Link to="/SignUp" className='link_login'>Entrar</Link></button>
+
     </nav>
   );
 }
