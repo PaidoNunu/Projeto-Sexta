@@ -24,6 +24,7 @@ body{
   align-items: center;
 }
 .logodiv img{
+  margin-top: 5px;
   width: 130%;
   height:190px;
 }
