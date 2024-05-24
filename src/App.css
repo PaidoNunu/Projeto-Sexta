@@ -28,7 +28,7 @@ body{
   width: 130%;
   height:190px;
 }
-.botao{
+.botao, .botao1{
   background-color: #eeeeee00;
   padding: 0px;
   margin-left: 50px;
@@ -38,9 +38,9 @@ body{
 }
 .botaodiv{
   display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-left: 50vh;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-left: 50vh;
 }
 
 .link{
@@ -53,9 +53,7 @@ body{
     color: white;
     font-family: "Gugi", sans-serif;
     font-style: normal;
-    
 }
-
 .link_login{
   color: white;
     display: inline-block;
@@ -76,10 +74,10 @@ body{
 }
 .entrar{
   background-color: #447c46;
-  width: 100px !important;
+  width: 12vh !important;
   height: 60px !important;
   border-radius: 12px;
   border: 2px solid;
   border-color: white;
-  margin-left: 45vh;
+  margin-left: 50vh;
 }

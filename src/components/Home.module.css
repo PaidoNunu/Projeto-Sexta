@@ -1,8 +1,9 @@
 .geral{
-    background-image: url(../imgs/backgroundHome.jpg);
+    background-image: url(../imgs/backgroundPapel.jpg);
     background-size: cover;
     background-position: center;
-    margin: -35px;
+    width: 100%;
+    margin-top: -35px;
 }
 .container{
     height: 0 auto;

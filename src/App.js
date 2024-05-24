@@ -5,12 +5,13 @@ import Login from './Pages/Login'
 import Sobre from './Pages/Sobre'
 import logo from './imgs/logo.jpg'
 import PontosDescartes from './Pages/PontosDescartes'
+import Cadastro from './Pages/Cadastro'
 
 
 function Navbar() {
   const abas = ["Home", "Pontos de Descartes", "Sobre", 'Entrar'];
-  const links = ['', 'descartes', 'Sobre', 'SignUp']
-  const classes = ['botao', 'botao', 'botao', 'entrar']
+  const links = ['', 'Descartes', 'Sobre', 'Login']
+  const classes = ['botao', 'botao', 'botao1', 'entrar']
   const classesLink = ['link','link', 'link', 'link_login']
   return (
     <nav className='header'>
@@ -31,9 +32,10 @@ function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<><Navbar/><Home/></>}/>
-        <Route path='/SignUp' element={<Login/>}/>
-        <Route path='/descartes' element={<><Navbar/><PontosDescartes/></>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/Descartes' element={<><Navbar/><PontosDescartes/></>}/>
         <Route path='/Sobre' element={<><Navbar/><Sobre/></>}/>
+        <Route path='/Cadastro' element={<><Navbar/><Cadastro/></>}/>
       </Routes>
     </Router>
   );
