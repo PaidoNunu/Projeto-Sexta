@@ -21,7 +21,7 @@ function Navbar() {
             <Link to={`/${links[index]}`} className={`${classesLink[index]}`}>{aba}</Link>
           </button>))}
       </div>
-
+            
     </nav>
   );
 }
