@@ -1,12 +1,12 @@
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
-import styles from './App.css'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Sobre from './Pages/Sobre'
 import logo from './imgs/logo.jpg'
 import PontosDescartes from './Pages/PontosDescartes'
 import Cadastro from './Pages/Cadastro'
-
 
 function Navbar() {
   const abas = ["Home", "Pontos de Descartes", "Sobre", 'Entrar'];
@@ -28,7 +28,22 @@ function Navbar() {
 }
 
 function App() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'http://localhost:3000', // Substitua pelo endereço da sua API
+      );
+ 
+      setData(result.data);
+    };
+ 
+    fetchData();
+  }, []);
+
   return (
+    
+    <div className='App'>
     <Router>
       <Routes>
         <Route exact path='/' element={<><Navbar/><Home/></>}/>
@@ -38,6 +53,7 @@ function App() {
         <Route path='/Cadastro' element={<><Navbar/><Cadastro/></>}/>
       </Routes>
     </Router>
+    </div>
   );
 }
 

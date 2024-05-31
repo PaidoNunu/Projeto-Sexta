@@ -1,44 +1,36 @@
-import React from "react";
-import { useNavigate } from 'react-router-dom';
-import styles from '../components/Cadastro.module.css'
-import { Link } from 'react-router-dom';
-import logo from '../imgs/lixozero2.png'
-function Cadastro(){
-    return(
-        <div className={styles.divmae}>
-             <div className={styles.centralizar}>
-             <div className={styles.divform}>
-            <img className={styles.imgCadastro} src={logo} alt=""></img>
-        <form className={styles.form}>
-        <div className={styles.inputConteiner}>
-                <label className={styles.label} htmlFor="email">Nome</label>
-                <input className={styles.input1} type="text" name="email" id="nome" placeholder="Digite seu nome">
-                </input>
-            </div>
-            <div className={styles.inputConteiner}>
-                <label className={styles.label} htmlFor="email">E-mail</label>
-                <input className={styles.input1} type="text" name="email" id="email" placeholder="exemplo@gmail.com">
-                </input>
-            </div>
-            <div className={styles.inputConteiner}>
-                <label className={styles.label} htmlFor="password">Senha</label>
-                <input className={styles.input2} type="password" name="password" id="password" placeholder="*******">
-                </input>
-            </div>
-            <div className={styles.inputConteiner}>
-                <label className={styles.label} htmlFor="password">Confirme a senha</label>
-                <input className={styles.input2} type="password" name="password" id="comfirmassword" placeholder="*******">
-                </input>
-            </div>
-            <div className={styles.inputbotao}>
-                <button className={styles.button} >Cadastro</button>
-            </div>
-            <Link to="/Cadastro" className={styles.linkCadastro}>Cadastre aqui</Link>
-        </form>
-        </div>
-             </div>
-        </div>
-    )
+import React, { useState } from 'react';
+import axios from 'axios';
+
+function Cadastro() {
+  const [form, setForm] = useState({
+    nome: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await axios.post('http://localhost:3000/cadastro', form);
+    console.log(response.data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="nome" onChange={handleChange} placeholder="Nome" required />
+      <input type="email" name="email" onChange={handleChange} placeholder="Email" required />
+      <input type="password" name="password" onChange={handleChange} placeholder="Senha" required />
+      <input type="password" name="confirmPassword" onChange={handleChange} placeholder="Confirme a senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+  );
 }
 
 export default Cadastro;
